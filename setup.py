@@ -1,9 +1,8 @@
 from setuptools import setup, find_packages
 from paperscraper import __version__, __authors__
-
+import os
 def readme():
-    with open('README.md') as f:
-        return f.read()
+   return open(os.path.join(os.path.dirname(__file__), 'README.md'')).read()
 
 setup(
     name='paperscraper',
